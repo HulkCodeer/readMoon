@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1193DC4E272AAA4C008089D9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193DC4D272AAA4C008089D9 /* UIColor+Extension.swift */; };
+		1193DC51272AAD7F008089D9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193DC4F272AAD7F008089D9 /* String+Extension.swift */; };
+		1193DC52272AAD7F008089D9 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193DC50272AAD7F008089D9 /* Date+Extension.swift */; };
+		11EBA33A2723EB6F0013EBE4 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA3392723EB6F0013EBE4 /* CalendarCell.swift */; };
+		11EBA33C2723EBAD0013EBE4 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EBA33B2723EBAD0013EBE4 /* CalendarCell.xib */; };
+		11EBA33E2723EC6E0013EBE4 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA33D2723EC6E0013EBE4 /* UIStoryboard+Extension.swift */; };
+		11EBA3402723EEF90013EBE4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA33F2723EEF90013EBE4 /* UIViewController+Extension.swift */; };
+		11EBA3422723EF070013EBE4 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA3412723EF070013EBE4 /* UICollectionView+Extension.swift */; };
+		11EBA3442723F3030013EBE4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA3432723F3030013EBE4 /* RootViewController.swift */; };
+		11ED73F12723E605003B8BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED73F02723E605003B8BDC /* AppDelegate.swift */; };
+		11ED73F32723E605003B8BDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED73F22723E605003B8BDC /* SceneDelegate.swift */; };
+		11ED73F52723E605003B8BDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED73F42723E605003B8BDC /* MainViewController.swift */; };
+		11ED73F82723E605003B8BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED73F62723E605003B8BDC /* Main.storyboard */; };
+		11ED73FA2723E606003B8BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ED73F92723E606003B8BDC /* Assets.xcassets */; };
+		11ED73FD2723E606003B8BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED73FB2723E606003B8BDC /* LaunchScreen.storyboard */; };
+		11ED74082723E606003B8BDC /* ReadMoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED74072723E606003B8BDC /* ReadMoonTests.swift */; };
+		11ED74132723E606003B8BDC /* ReadMoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED74122723E606003B8BDC /* ReadMoonUITests.swift */; };
+		6BACFF37F806688E4ADB647A /* Pods_ReadMoonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5341CE2055D2B10ECBC7 /* Pods_ReadMoonTests.framework */; };
+		A7EF8797F17DF5102DD2E72B /* Pods_ReadMoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976C7B90DFFDEEAF0649842 /* Pods_ReadMoon.framework */; };
+		E25665D0A91C714D914FDE53 /* Pods_ReadMoon_ReadMoonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A14025BE4770452FEA0986C /* Pods_ReadMoon_ReadMoonUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11ED74042723E606003B8BDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ED73E52723E604003B8BDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11ED73EC2723E604003B8BDC;
+			remoteInfo = ReadMoon;
+		};
+		11ED740F2723E606003B8BDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ED73E52723E604003B8BDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11ED73EC2723E604003B8BDC;
+			remoteInfo = ReadMoon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		093F5341CE2055D2B10ECBC7 /* Pods_ReadMoonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMoonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1193DC4D272AAA4C008089D9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1193DC4F272AAD7F008089D9 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		1193DC50272AAD7F008089D9 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		11EBA3392723EB6F0013EBE4 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		11EBA33B2723EBAD0013EBE4 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		11EBA33D2723EC6E0013EBE4 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		11EBA33F2723EEF90013EBE4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		11EBA3412723EF070013EBE4 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		11EBA3432723F3030013EBE4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		11ED73ED2723E604003B8BDC /* ReadMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11ED73F02723E605003B8BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11ED73F22723E605003B8BDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11ED73F42723E605003B8BDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		11ED73F72723E605003B8BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11ED73F92723E606003B8BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11ED73FC2723E606003B8BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11ED73FE2723E606003B8BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11ED74032723E606003B8BDC /* ReadMoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadMoonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11ED74072723E606003B8BDC /* ReadMoonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoonTests.swift; sourceTree = "<group>"; };
+		11ED74092723E606003B8BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11ED740E2723E606003B8BDC /* ReadMoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadMoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11ED74122723E606003B8BDC /* ReadMoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoonUITests.swift; sourceTree = "<group>"; };
+		11ED74142723E606003B8BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A14025BE4770452FEA0986C /* Pods_ReadMoon_ReadMoonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMoon_ReadMoonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6681D1DAEA42894BB675BE /* Pods-ReadMoonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoonTests.release.xcconfig"; path = "Target Support Files/Pods-ReadMoonTests/Pods-ReadMoonTests.release.xcconfig"; sourceTree = "<group>"; };
+		904EC01DE24AF3185CDA7D4A /* Pods-ReadMoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoon.release.xcconfig"; path = "Target Support Files/Pods-ReadMoon/Pods-ReadMoon.release.xcconfig"; sourceTree = "<group>"; };
+		AD9FCF0F1108123B1E4F438A /* Pods-ReadMoon-ReadMoonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoon-ReadMoonUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReadMoon-ReadMoonUITests/Pods-ReadMoon-ReadMoonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C180DB8E34FF56B5913630F7 /* Pods-ReadMoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoon.debug.xcconfig"; path = "Target Support Files/Pods-ReadMoon/Pods-ReadMoon.debug.xcconfig"; sourceTree = "<group>"; };
+		C976C7B90DFFDEEAF0649842 /* Pods_ReadMoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F1CD6568730B1761F8F4AF /* Pods-ReadMoon-ReadMoonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoon-ReadMoonUITests.release.xcconfig"; path = "Target Support Files/Pods-ReadMoon-ReadMoonUITests/Pods-ReadMoon-ReadMoonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5EF3DCCB62737101209A2C0 /* Pods-ReadMoonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoonTests.debug.xcconfig"; path = "Target Support Files/Pods-ReadMoonTests/Pods-ReadMoonTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11ED73EA2723E604003B8BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EF8797F17DF5102DD2E72B /* Pods_ReadMoon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ED74002723E606003B8BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BACFF37F806688E4ADB647A /* Pods_ReadMoonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ED740B2723E606003B8BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25665D0A91C714D914FDE53 /* Pods_ReadMoon_ReadMoonUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108D54F2FA58717BF5B113E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C976C7B90DFFDEEAF0649842 /* Pods_ReadMoon.framework */,
+				2A14025BE4770452FEA0986C /* Pods_ReadMoon_ReadMoonUITests.framework */,
+				093F5341CE2055D2B10ECBC7 /* Pods_ReadMoonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1193DC4B272AA50E008089D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11EBA3432723F3030013EBE4 /* RootViewController.swift */,
+				11ED73F42723E605003B8BDC /* MainViewController.swift */,
+				1193DC4C272AA526008089D9 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1193DC4C272AA526008089D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11EBA3392723EB6F0013EBE4 /* CalendarCell.swift */,
+				11EBA33B2723EBAD0013EBE4 /* CalendarCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		11ED73E42723E604003B8BDC = {
+			isa = PBXGroup;
+			children = (
+				11ED73EF2723E604003B8BDC /* ReadMoon */,
+				11ED74062723E606003B8BDC /* ReadMoonTests */,
+				11ED74112723E606003B8BDC /* ReadMoonUITests */,
+				11ED73EE2723E604003B8BDC /* Products */,
+				954E6BF31ADA4C9A6FB4AAAD /* Pods */,
+				108D54F2FA58717BF5B113E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11ED73EE2723E604003B8BDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11ED73ED2723E604003B8BDC /* ReadMoon.app */,
+				11ED74032723E606003B8BDC /* ReadMoonTests.xctest */,
+				11ED740E2723E606003B8BDC /* ReadMoonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11ED73EF2723E604003B8BDC /* ReadMoon */ = {
+			isa = PBXGroup;
+			children = (
+				1193DC4B272AA50E008089D9 /* View */,
+				11ED73F02723E605003B8BDC /* AppDelegate.swift */,
+				11ED73F22723E605003B8BDC /* SceneDelegate.swift */,
+				11ED73F62723E605003B8BDC /* Main.storyboard */,
+				11ED73F92723E606003B8BDC /* Assets.xcassets */,
+				11ED73FB2723E606003B8BDC /* LaunchScreen.storyboard */,
+				11ED73FE2723E606003B8BDC /* Info.plist */,
+				11EBA33D2723EC6E0013EBE4 /* UIStoryboard+Extension.swift */,
+				11EBA33F2723EEF90013EBE4 /* UIViewController+Extension.swift */,
+				11EBA3412723EF070013EBE4 /* UICollectionView+Extension.swift */,
+				1193DC4D272AAA4C008089D9 /* UIColor+Extension.swift */,
+				1193DC50272AAD7F008089D9 /* Date+Extension.swift */,
+				1193DC4F272AAD7F008089D9 /* String+Extension.swift */,
+			);
+			path = ReadMoon;
+			sourceTree = "<group>";
+		};
+		11ED74062723E606003B8BDC /* ReadMoonTests */ = {
+			isa = PBXGroup;
+			children = (
+				11ED74072723E606003B8BDC /* ReadMoonTests.swift */,
+				11ED74092723E606003B8BDC /* Info.plist */,
+			);
+			path = ReadMoonTests;
+			sourceTree = "<group>";
+		};
+		11ED74112723E606003B8BDC /* ReadMoonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11ED74122723E606003B8BDC /* ReadMoonUITests.swift */,
+				11ED74142723E606003B8BDC /* Info.plist */,
+			);
+			path = ReadMoonUITests;
+			sourceTree = "<group>";
+		};
+		954E6BF31ADA4C9A6FB4AAAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C180DB8E34FF56B5913630F7 /* Pods-ReadMoon.debug.xcconfig */,
+				904EC01DE24AF3185CDA7D4A /* Pods-ReadMoon.release.xcconfig */,
+				AD9FCF0F1108123B1E4F438A /* Pods-ReadMoon-ReadMoonUITests.debug.xcconfig */,
+				D7F1CD6568730B1761F8F4AF /* Pods-ReadMoon-ReadMoonUITests.release.xcconfig */,
+				E5EF3DCCB62737101209A2C0 /* Pods-ReadMoonTests.debug.xcconfig */,
+				8C6681D1DAEA42894BB675BE /* Pods-ReadMoonTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11ED73EC2723E604003B8BDC /* ReadMoon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11ED74172723E606003B8BDC /* Build configuration list for PBXNativeTarget "ReadMoon" */;
+			buildPhases = (
+				DC0DEA1953C5823B5C3A629D /* [CP] Check Pods Manifest.lock */,
+				11ED73E92723E604003B8BDC /* Sources */,
+				11ED73EA2723E604003B8BDC /* Frameworks */,
+				11ED73EB2723E604003B8BDC /* Resources */,
+				6344B9DFCD4757982AC87502 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadMoon;
+			productName = ReadMoon;
+			productReference = 11ED73ED2723E604003B8BDC /* ReadMoon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11ED74022723E606003B8BDC /* ReadMoonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11ED741A2723E606003B8BDC /* Build configuration list for PBXNativeTarget "ReadMoonTests" */;
+			buildPhases = (
+				27262ACE8B7228241AF998A0 /* [CP] Check Pods Manifest.lock */,
+				11ED73FF2723E606003B8BDC /* Sources */,
+				11ED74002723E606003B8BDC /* Frameworks */,
+				11ED74012723E606003B8BDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11ED74052723E606003B8BDC /* PBXTargetDependency */,
+			);
+			name = ReadMoonTests;
+			productName = ReadMoonTests;
+			productReference = 11ED74032723E606003B8BDC /* ReadMoonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11ED740D2723E606003B8BDC /* ReadMoonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11ED741D2723E606003B8BDC /* Build configuration list for PBXNativeTarget "ReadMoonUITests" */;
+			buildPhases = (
+				6B7A70A07FC58D5772F3345B /* [CP] Check Pods Manifest.lock */,
+				11ED740A2723E606003B8BDC /* Sources */,
+				11ED740B2723E606003B8BDC /* Frameworks */,
+				11ED740C2723E606003B8BDC /* Resources */,
+				3B28D71A9DBAA7C74CA8A172 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11ED74102723E606003B8BDC /* PBXTargetDependency */,
+			);
+			name = ReadMoonUITests;
+			productName = ReadMoonUITests;
+			productReference = 11ED740E2723E606003B8BDC /* ReadMoonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11ED73E52723E604003B8BDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					11ED73EC2723E604003B8BDC = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					11ED74022723E606003B8BDC = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 11ED73EC2723E604003B8BDC;
+					};
+					11ED740D2723E606003B8BDC = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 11ED73EC2723E604003B8BDC;
+					};
+				};
+			};
+			buildConfigurationList = 11ED73E82723E604003B8BDC /* Build configuration list for PBXProject "ReadMoon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11ED73E42723E604003B8BDC;
+			productRefGroup = 11ED73EE2723E604003B8BDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11ED73EC2723E604003B8BDC /* ReadMoon */,
+				11ED74022723E606003B8BDC /* ReadMoonTests */,
+				11ED740D2723E606003B8BDC /* ReadMoonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11ED73EB2723E604003B8BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ED73FD2723E606003B8BDC /* LaunchScreen.storyboard in Resources */,
+				11ED73FA2723E606003B8BDC /* Assets.xcassets in Resources */,
+				11ED73F82723E605003B8BDC /* Main.storyboard in Resources */,
+				11EBA33C2723EBAD0013EBE4 /* CalendarCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ED74012723E606003B8BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ED740C2723E606003B8BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27262ACE8B7228241AF998A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadMoonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B28D71A9DBAA7C74CA8A172 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadMoon-ReadMoonUITests/Pods-ReadMoon-ReadMoonUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadMoon-ReadMoonUITests/Pods-ReadMoon-ReadMoonUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadMoon-ReadMoonUITests/Pods-ReadMoon-ReadMoonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6344B9DFCD4757982AC87502 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadMoon/Pods-ReadMoon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadMoon/Pods-ReadMoon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadMoon/Pods-ReadMoon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7A70A07FC58D5772F3345B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadMoon-ReadMoonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0DEA1953C5823B5C3A629D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadMoon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11ED73E92723E604003B8BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11EBA3402723EEF90013EBE4 /* UIViewController+Extension.swift in Sources */,
+				1193DC52272AAD7F008089D9 /* Date+Extension.swift in Sources */,
+				11ED73F52723E605003B8BDC /* MainViewController.swift in Sources */,
+				11EBA3422723EF070013EBE4 /* UICollectionView+Extension.swift in Sources */,
+				1193DC4E272AAA4C008089D9 /* UIColor+Extension.swift in Sources */,
+				11ED73F12723E605003B8BDC /* AppDelegate.swift in Sources */,
+				11ED73F32723E605003B8BDC /* SceneDelegate.swift in Sources */,
+				11EBA33A2723EB6F0013EBE4 /* CalendarCell.swift in Sources */,
+				11EBA3442723F3030013EBE4 /* RootViewController.swift in Sources */,
+				1193DC51272AAD7F008089D9 /* String+Extension.swift in Sources */,
+				11EBA33E2723EC6E0013EBE4 /* UIStoryboard+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ED73FF2723E606003B8BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ED74082723E606003B8BDC /* ReadMoonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ED740A2723E606003B8BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ED74132723E606003B8BDC /* ReadMoonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11ED74052723E606003B8BDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11ED73EC2723E604003B8BDC /* ReadMoon */;
+			targetProxy = 11ED74042723E606003B8BDC /* PBXContainerItemProxy */;
+		};
+		11ED74102723E606003B8BDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11ED73EC2723E604003B8BDC /* ReadMoon */;
+			targetProxy = 11ED740F2723E606003B8BDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11ED73F62723E605003B8BDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11ED73F72723E605003B8BDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11ED73FB2723E606003B8BDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11ED73FC2723E606003B8BDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11ED74152723E606003B8BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11ED74162723E606003B8BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11ED74182723E606003B8BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C180DB8E34FF56B5913630F7 /* Pods-ReadMoon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = ReadMoon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.readMoon.ReadMoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11ED74192723E606003B8BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904EC01DE24AF3185CDA7D4A /* Pods-ReadMoon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = ReadMoon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.readMoon.ReadMoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11ED741B2723E606003B8BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5EF3DCCB62737101209A2C0 /* Pods-ReadMoonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = ReadMoonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.readMoon.ReadMoonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadMoon.app/ReadMoon";
+			};
+			name = Debug;
+		};
+		11ED741C2723E606003B8BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6681D1DAEA42894BB675BE /* Pods-ReadMoonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = ReadMoonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.readMoon.ReadMoonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadMoon.app/ReadMoon";
+			};
+			name = Release;
+		};
+		11ED741E2723E606003B8BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD9FCF0F1108123B1E4F438A /* Pods-ReadMoon-ReadMoonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = ReadMoonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.readMoon.ReadMoonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReadMoon;
+			};
+			name = Debug;
+		};
+		11ED741F2723E606003B8BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F1CD6568730B1761F8F4AF /* Pods-ReadMoon-ReadMoonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = ReadMoonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.readMoon.ReadMoonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReadMoon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11ED73E82723E604003B8BDC /* Build configuration list for PBXProject "ReadMoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11ED74152723E606003B8BDC /* Debug */,
+				11ED74162723E606003B8BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11ED74172723E606003B8BDC /* Build configuration list for PBXNativeTarget "ReadMoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11ED74182723E606003B8BDC /* Debug */,
+				11ED74192723E606003B8BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11ED741A2723E606003B8BDC /* Build configuration list for PBXNativeTarget "ReadMoonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11ED741B2723E606003B8BDC /* Debug */,
+				11ED741C2723E606003B8BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11ED741D2723E606003B8BDC /* Build configuration list for PBXNativeTarget "ReadMoonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11ED741E2723E606003B8BDC /* Debug */,
+				11ED741F2723E606003B8BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11ED73E52723E604003B8BDC /* Project object */;
+}
