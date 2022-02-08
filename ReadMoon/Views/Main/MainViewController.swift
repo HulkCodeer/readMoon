@@ -14,15 +14,52 @@ internal final class MainViewController: UIViewController {
     private enum Reusable {
         static let calendarCell = ReusableCell<CalendarCell>(nibName: CalendarCell.reuseID)
     }
+        
+    private lazy var headerTotalView = UIView().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    private lazy var calendarIconImgView = UIImageView().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.image = UIImage(named: "calendarIcon")
+        $0.contentMode = .scaleToFill
+    }
+    
+    private lazy var titleLbl = UILabel().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.text = "캘린더"
+        $0.font = UIFont.systemFont(ofSize: 24)
+        $0.textColor = UIColor(red: 24, green: 24, blue: 24)
+    }
+    
+    private lazy var calendarMoveTotalView = UIView().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    private lazy var calendarLeftArrowImgView = UIImageView().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.image = UIImage(named: "calendarLeftArrow")
+        $0.contentMode = .scaleToFill
+    }
+    
+    private lazy var calendarRightArrowImgView = UIImageView().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.image = UIImage(named: "calendarRightArrow")
+        $0.contentMode = .scaleToFill
+    }
+    
+    private lazy var weekTitleTotalView = UIView().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+    }
     
     private lazy var collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewFlowLayout().then {
             $0.scrollDirection = .vertical
-            $0.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 84)
+            $0.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 60)
             $0.sectionInsetReference = .fromSafeArea
-            $0.minimumInteritemSpacing = 0
-            $0.minimumLineSpacing = 0
+            $0.minimumInteritemSpacing = 3
+            $0.minimumLineSpacing = 3
             $0.sectionInset = .zero
         }
     ).then {
@@ -33,9 +70,75 @@ internal final class MainViewController: UIViewController {
         $0.backgroundColor = .white
         $0.showsHorizontalScrollIndicator = false
         $0.alwaysBounceVertical = true
+        $0.delegate = self
+        $0.dataSource = self
     }
     
     private var calendarDayArray: [String] = .init()
+    
+    override func loadView() {
+        super.loadView()
+            
+        self.view.addSubview(self.headerTotalView)
+        self.headerTotalView.snp.makeConstraints {
+            $0.leading.trailing.top.equalToSuperview()
+            let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+            let topPadding = window?.safeAreaInsets.top ?? 0
+            $0.height.equalTo(topPadding + 60)
+        }
+        
+        self.headerTotalView.addSubview(self.calendarIconImgView)
+        self.calendarIconImgView.snp.makeConstraints {
+            $0.leading.equalToSuperview().offset(20)
+            $0.bottom.equalToSuperview().offset(-14)
+            $0.width.height.equalTo(32)
+        }
+        
+        self.headerTotalView.addSubview(self.titleLbl)
+        self.titleLbl.snp.makeConstraints {
+            $0.leading.equalTo(self.calendarIconImgView.snp.trailing).offset(6)
+            $0.centerY.equalTo(self.calendarIconImgView.snp.centerY)
+            $0.height.equalTo(26)
+        }
+        
+        self.view.addSubview(self.calendarMoveTotalView)
+        self.calendarMoveTotalView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.top.equalTo(self.headerTotalView.snp.bottom)
+            $0.height.equalTo(60)
+        }
+        
+        self.calendarMoveTotalView.addSubview(self.calendarLeftArrowImgView)
+        self.calendarLeftArrowImgView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(16)
+            $0.leading.equalToSuperview().offset(20)
+            $0.bottom.equalToSuperview().offset(-14)
+            $0.width.height.equalTo(30)
+        }
+        
+        self.calendarMoveTotalView.addSubview(self.calendarRightArrowImgView)
+        self.calendarRightArrowImgView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(16)
+            $0.trailing.equalToSuperview().offset(-20)
+            $0.bottom.equalToSuperview().offset(-14)
+            $0.width.height.equalTo(30)
+        }
+        
+        self.view.addSubview(self.weekTitleTotalView)
+        self.weekTitleTotalView.snp.makeConstraints {
+            $0.top.equalTo(self.calendarMoveTotalView.snp.bottom)
+            $0.leading.equalToSuperview()            
+            $0.width.height.equalTo(30)
+        }
+        
+        self.view.addSubview(self.collectionView)
+        self.collectionView.snp.makeConstraints {
+            $0.top.equalTo(self.weekTitleTotalView.snp.bottom)
+            $0.leading.equalToSuperview().offset(11)
+            $0.trailing.equalToSuperview().offset(-10)
+            $0.bottom.equalToSuperview()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,11 +227,9 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
 
     func collectionView(_ collectionView: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let index = indexPath.row
-        
-        let calendarCellWith = (UIScreen.main.bounds.width - 58) / 7
-        let calendarCellHeight = (32 / 34) * calendarCellWith
-        return CGSize(width: calendarCellWith, height: calendarCellHeight)
+        let cellWith = (UIScreen.main.bounds.width - (6 * 3) - 21) / 7
+        let cellHeight = (60 / 48) * cellWith
+        return CGSize(width: cellWith, height: cellHeight)
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

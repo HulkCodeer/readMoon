@@ -10,53 +10,37 @@ import UIKit
 import Then
 import SnapKit
 
-internal final class CalendarCell: UICollectionViewCell {
+internal final class CalendarCell: CommonBaseCollectionViewCell {
     internal lazy var dayBtn = UIButton().then {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("", for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         $0.isUserInteractionEnabled = false
-        $0.setTitleColor(UIColor.init(r: 247, g: 247, b: 247), for: .normal)
+        $0.setTitleColor(UIColor(red: 108, green: 108, blue: 108) , for: .normal)
     }
 
     internal var cellDate: Date = .init()
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.makeUI()
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.makeUI()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-
+    
     deinit {
         print("\(type(of: self)): DEINIT")
     }
 
-    private func makeUI() {
-        self.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        let cellWidth = (UIScreen.main.bounds.width - 58) / 7
-        let cellHeight = (32 / 34) * cellWidth        
-        self.contentView.snp.makeConstraints {
-            $0.width.equalTo(cellWidth)
-            $0.height.equalTo(cellHeight)
-        }
-
+    override func makeUI() {
+        let cellWidth = (UIScreen.main.bounds.width - (6 * 3) - 21) / 7
+        let cellHeight = (60 / 48) * cellWidth
+        
+        self.contentView.backgroundColor = UIColor(red: 247, green: 247, blue: 247)
+        self.contentView.IBcornerRadious = 3
+        
         self.contentView.addSubview(self.dayBtn)
         self.dayBtn.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.width.equalTo(cellWidth)
             $0.height.equalTo(cellHeight)
         }
 
         self.dayBtn.isSelected = false
     }
-
+    
     internal func bind(dateStr: String, index _: Int) {
         if !dateStr.isEmpty {
             self.cellDate = dateStr.toDate(dateFormat: "yyyy-MM-dd")!

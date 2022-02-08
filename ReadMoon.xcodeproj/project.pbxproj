@@ -10,20 +10,23 @@
 		1193DC4E272AAA4C008089D9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193DC4D272AAA4C008089D9 /* UIColor+Extension.swift */; };
 		1193DC51272AAD7F008089D9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193DC4F272AAD7F008089D9 /* String+Extension.swift */; };
 		1193DC52272AAD7F008089D9 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193DC50272AAD7F008089D9 /* Date+Extension.swift */; };
+		11954DD527B10D8500A14AF1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11954DD427B10D8500A14AF1 /* SplashViewController.swift */; };
+		11954DD727B10DA300A14AF1 /* CommonBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11954DD627B10DA300A14AF1 /* CommonBaseViewController.swift */; };
+		11954E1927B1110300A14AF1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11954E1827B1110300A14AF1 /* RootViewController.swift */; };
 		11EBA33A2723EB6F0013EBE4 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA3392723EB6F0013EBE4 /* CalendarCell.swift */; };
 		11EBA33C2723EBAD0013EBE4 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EBA33B2723EBAD0013EBE4 /* CalendarCell.xib */; };
 		11EBA33E2723EC6E0013EBE4 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA33D2723EC6E0013EBE4 /* UIStoryboard+Extension.swift */; };
 		11EBA3402723EEF90013EBE4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA33F2723EEF90013EBE4 /* UIViewController+Extension.swift */; };
 		11EBA3422723EF070013EBE4 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA3412723EF070013EBE4 /* UICollectionView+Extension.swift */; };
-		11EBA3442723F3030013EBE4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBA3432723F3030013EBE4 /* RootViewController.swift */; };
 		11ED73F12723E605003B8BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED73F02723E605003B8BDC /* AppDelegate.swift */; };
 		11ED73F32723E605003B8BDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED73F22723E605003B8BDC /* SceneDelegate.swift */; };
 		11ED73F52723E605003B8BDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED73F42723E605003B8BDC /* MainViewController.swift */; };
-		11ED73F82723E605003B8BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED73F62723E605003B8BDC /* Main.storyboard */; };
 		11ED73FA2723E606003B8BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ED73F92723E606003B8BDC /* Assets.xcassets */; };
 		11ED73FD2723E606003B8BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED73FB2723E606003B8BDC /* LaunchScreen.storyboard */; };
 		11ED74082723E606003B8BDC /* ReadMoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED74072723E606003B8BDC /* ReadMoonTests.swift */; };
 		11ED74132723E606003B8BDC /* ReadMoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED74122723E606003B8BDC /* ReadMoonUITests.swift */; };
+		11FA6D7027B28FBA00D59595 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FA6D6F27B28FBA00D59595 /* UIView+Extension.swift */; };
+		11FA6D7227B2906500D59595 /* CommonBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FA6D7127B2906500D59595 /* CommonBaseCollectionViewCell.swift */; };
 		6BACFF37F806688E4ADB647A /* Pods_ReadMoonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5341CE2055D2B10ECBC7 /* Pods_ReadMoonTests.framework */; };
 		A7EF8797F17DF5102DD2E72B /* Pods_ReadMoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976C7B90DFFDEEAF0649842 /* Pods_ReadMoon.framework */; };
 		E25665D0A91C714D914FDE53 /* Pods_ReadMoon_ReadMoonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A14025BE4770452FEA0986C /* Pods_ReadMoon_ReadMoonUITests.framework */; };
@@ -51,17 +54,18 @@
 		1193DC4D272AAA4C008089D9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1193DC4F272AAD7F008089D9 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1193DC50272AAD7F008089D9 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		11954DD427B10D8500A14AF1 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		11954DD627B10DA300A14AF1 /* CommonBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBaseViewController.swift; sourceTree = "<group>"; };
+		11954E1827B1110300A14AF1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		11EBA3392723EB6F0013EBE4 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		11EBA33B2723EBAD0013EBE4 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		11EBA33D2723EC6E0013EBE4 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		11EBA33F2723EEF90013EBE4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		11EBA3412723EF070013EBE4 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		11EBA3432723F3030013EBE4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		11ED73ED2723E604003B8BDC /* ReadMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED73F02723E605003B8BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11ED73F22723E605003B8BDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11ED73F42723E605003B8BDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		11ED73F72723E605003B8BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11ED73F92723E606003B8BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11ED73FC2723E606003B8BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11ED73FE2723E606003B8BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		11ED740E2723E606003B8BDC /* ReadMoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadMoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED74122723E606003B8BDC /* ReadMoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoonUITests.swift; sourceTree = "<group>"; };
 		11ED74142723E606003B8BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11FA6D6F27B28FBA00D59595 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		11FA6D7127B2906500D59595 /* CommonBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A14025BE4770452FEA0986C /* Pods_ReadMoon_ReadMoonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMoon_ReadMoonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6681D1DAEA42894BB675BE /* Pods-ReadMoonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoonTests.release.xcconfig"; path = "Target Support Files/Pods-ReadMoonTests/Pods-ReadMoonTests.release.xcconfig"; sourceTree = "<group>"; };
 		904EC01DE24AF3185CDA7D4A /* Pods-ReadMoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMoon.release.xcconfig"; path = "Target Support Files/Pods-ReadMoon/Pods-ReadMoon.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,14 +125,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1193DC4B272AA50E008089D9 /* View */ = {
+		1193DC4B272AA50E008089D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				11EBA3432723F3030013EBE4 /* RootViewController.swift */,
-				11ED73F42723E605003B8BDC /* MainViewController.swift */,
-				1193DC4C272AA526008089D9 /* Cells */,
+				11954E1727B110F200A14AF1 /* Root */,
+				11954DD327B10D7100A14AF1 /* Main */,
+				11954DD227B10D6100A14AF1 /* Splash */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1193DC4C272AA526008089D9 /* Cells */ = {
@@ -136,6 +142,40 @@
 				11EBA33B2723EBAD0013EBE4 /* CalendarCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		11954DD127B10CC300A14AF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				11954DD627B10DA300A14AF1 /* CommonBaseViewController.swift */,
+				11FA6D7127B2906500D59595 /* CommonBaseCollectionViewCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		11954DD227B10D6100A14AF1 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				11954DD427B10D8500A14AF1 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		11954DD327B10D7100A14AF1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				11ED73F42723E605003B8BDC /* MainViewController.swift */,
+				1193DC4C272AA526008089D9 /* Cells */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		11954E1727B110F200A14AF1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				11954E1827B1110300A14AF1 /* RootViewController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		11ED73E42723E604003B8BDC = {
@@ -163,19 +203,14 @@
 		11ED73EF2723E604003B8BDC /* ReadMoon */ = {
 			isa = PBXGroup;
 			children = (
-				1193DC4B272AA50E008089D9 /* View */,
+				11FA6D6E27B28F9700D59595 /* Extension */,
+				11954DD127B10CC300A14AF1 /* Common */,
+				1193DC4B272AA50E008089D9 /* Views */,
 				11ED73F02723E605003B8BDC /* AppDelegate.swift */,
 				11ED73F22723E605003B8BDC /* SceneDelegate.swift */,
-				11ED73F62723E605003B8BDC /* Main.storyboard */,
 				11ED73F92723E606003B8BDC /* Assets.xcassets */,
 				11ED73FB2723E606003B8BDC /* LaunchScreen.storyboard */,
 				11ED73FE2723E606003B8BDC /* Info.plist */,
-				11EBA33D2723EC6E0013EBE4 /* UIStoryboard+Extension.swift */,
-				11EBA33F2723EEF90013EBE4 /* UIViewController+Extension.swift */,
-				11EBA3412723EF070013EBE4 /* UICollectionView+Extension.swift */,
-				1193DC4D272AAA4C008089D9 /* UIColor+Extension.swift */,
-				1193DC50272AAD7F008089D9 /* Date+Extension.swift */,
-				1193DC4F272AAD7F008089D9 /* String+Extension.swift */,
 			);
 			path = ReadMoon;
 			sourceTree = "<group>";
@@ -196,6 +231,20 @@
 				11ED74142723E606003B8BDC /* Info.plist */,
 			);
 			path = ReadMoonUITests;
+			sourceTree = "<group>";
+		};
+		11FA6D6E27B28F9700D59595 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				11EBA33D2723EC6E0013EBE4 /* UIStoryboard+Extension.swift */,
+				11EBA33F2723EEF90013EBE4 /* UIViewController+Extension.swift */,
+				11EBA3412723EF070013EBE4 /* UICollectionView+Extension.swift */,
+				1193DC4D272AAA4C008089D9 /* UIColor+Extension.swift */,
+				1193DC50272AAD7F008089D9 /* Date+Extension.swift */,
+				1193DC4F272AAD7F008089D9 /* String+Extension.swift */,
+				11FA6D6F27B28FBA00D59595 /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		954E6BF31ADA4C9A6FB4AAAD /* Pods */ = {
@@ -321,7 +370,6 @@
 			files = (
 				11ED73FD2723E606003B8BDC /* LaunchScreen.storyboard in Resources */,
 				11ED73FA2723E606003B8BDC /* Assets.xcassets in Resources */,
-				11ED73F82723E605003B8BDC /* Main.storyboard in Resources */,
 				11EBA33C2723EBAD0013EBE4 /* CalendarCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,14 +501,18 @@
 				11EBA3402723EEF90013EBE4 /* UIViewController+Extension.swift in Sources */,
 				1193DC52272AAD7F008089D9 /* Date+Extension.swift in Sources */,
 				11ED73F52723E605003B8BDC /* MainViewController.swift in Sources */,
+				11FA6D7227B2906500D59595 /* CommonBaseCollectionViewCell.swift in Sources */,
 				11EBA3422723EF070013EBE4 /* UICollectionView+Extension.swift in Sources */,
+				11954E1927B1110300A14AF1 /* RootViewController.swift in Sources */,
 				1193DC4E272AAA4C008089D9 /* UIColor+Extension.swift in Sources */,
 				11ED73F12723E605003B8BDC /* AppDelegate.swift in Sources */,
 				11ED73F32723E605003B8BDC /* SceneDelegate.swift in Sources */,
+				11FA6D7027B28FBA00D59595 /* UIView+Extension.swift in Sources */,
 				11EBA33A2723EB6F0013EBE4 /* CalendarCell.swift in Sources */,
-				11EBA3442723F3030013EBE4 /* RootViewController.swift in Sources */,
+				11954DD727B10DA300A14AF1 /* CommonBaseViewController.swift in Sources */,
 				1193DC51272AAD7F008089D9 /* String+Extension.swift in Sources */,
 				11EBA33E2723EC6E0013EBE4 /* UIStoryboard+Extension.swift in Sources */,
+				11954DD527B10D8500A14AF1 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,14 +548,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		11ED73F62723E605003B8BDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11ED73F72723E605003B8BDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11ED73FB2723E606003B8BDC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -566,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -621,7 +665,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
