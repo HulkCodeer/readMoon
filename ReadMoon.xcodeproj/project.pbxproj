@@ -16,6 +16,8 @@
 		11AE7DD927EC6F4E0033371F /* readMoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DD827EC6F4E0033371F /* readMoonTests.swift */; };
 		11AE7DE327EC6F4E0033371F /* readMoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DE227EC6F4E0033371F /* readMoonUITests.swift */; };
 		11AE7DE527EC6F4E0033371F /* readMoonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DE427EC6F4E0033371F /* readMoonUITestsLaunchTests.swift */; };
+		11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF127EC702B0033371F /* HomeContentView.swift */; };
+		11AE7DF727EC70CA0033371F /* SplashContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF627EC70CA0033371F /* SplashContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		11AE7DDE27EC6F4E0033371F /* readMoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = readMoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AE7DE227EC6F4E0033371F /* readMoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readMoonUITests.swift; sourceTree = "<group>"; };
 		11AE7DE427EC6F4E0033371F /* readMoonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readMoonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11AE7DF127EC702B0033371F /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
+		11AE7DF627EC70CA0033371F /* SplashContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,8 @@
 		11AE7DC127EC6F4D0033371F /* readMoon */ = {
 			isa = PBXGroup;
 			children = (
-				11AE7DC227EC6F4D0033371F /* readMoonApp.swift */,
+				11AE7DF827EC71D60033371F /* Application */,
+				11AE7DF427EC70780033371F /* Views */,
 				11AE7DC427EC6F4D0033371F /* ContentView.swift */,
 				11AE7DC627EC6F4E0033371F /* Assets.xcassets */,
 				11AE7DCB27EC6F4E0033371F /* Persistence.swift */,
@@ -131,6 +136,39 @@
 				11AE7DE427EC6F4E0033371F /* readMoonUITestsLaunchTests.swift */,
 			);
 			path = readMoonUITests;
+			sourceTree = "<group>";
+		};
+		11AE7DF327EC70730033371F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				11AE7DF127EC702B0033371F /* HomeContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		11AE7DF427EC70780033371F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11AE7DF527EC70800033371F /* Splash */,
+				11AE7DF327EC70730033371F /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11AE7DF527EC70800033371F /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				11AE7DF627EC70CA0033371F /* SplashContentView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		11AE7DF827EC71D60033371F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				11AE7DC227EC6F4D0033371F /* readMoonApp.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11AE7DCC27EC6F4E0033371F /* Persistence.swift in Sources */,
+				11AE7DF727EC70CA0033371F /* SplashContentView.swift in Sources */,
 				11AE7DC527EC6F4D0033371F /* ContentView.swift in Sources */,
 				11AE7DCF27EC6F4E0033371F /* readMoon.xcdatamodeld in Sources */,
+				11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */,
 				11AE7DC327EC6F4D0033371F /* readMoonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
