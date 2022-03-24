@@ -1,13 +1,13 @@
 //
-//  ReadMoonUITests.swift
-//  ReadMoonUITests
+//  readMoonUITests.swift
+//  readMoonUITests
 //
-//  Created by 박현진 on 2021/10/23.
+//  Created by 박현진 on 2022/03/24.
 //
 
 import XCTest
 
-class ReadMoonUITests: XCTestCase {
+class readMoonUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
