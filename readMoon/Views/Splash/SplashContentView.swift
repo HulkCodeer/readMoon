@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct SplashContentView: View {
-    var body: some View {
-        Image("splashIcon")
-            .frame(width: 186, height: 237)
-    }.onAppear(perform: <#T##(() -> Void)?#>)
+    @State var isActive: Bool = false
+    
+    var body: some View {        
+        if isActive {
+            HomeContentView()
+        } else {
+            Image("splashIcon")
+                .frame(width: 186, height: 237)
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                        withAnimation {
+                            self.isActive.toggle()
+                        }
+                    }
+                }
+        }
+    }
 }
 
 struct SplashContentView_Previews: PreviewProvider {

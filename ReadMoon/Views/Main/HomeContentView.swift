@@ -9,7 +9,18 @@ import SwiftUI
 
 struct HomeContentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Image("calendarIcon")
+                    .frame(width: 32, height: 32)                
+                Text("캘린더")
+                    .font(Font.system(size: 24, weight: .bold))
+                Image("calendarGuideIcon")
+                    .frame(width: 24, height: 24)
+                Spacer()
+            }
+            
+        }
     }
 }
 
