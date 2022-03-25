@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeContentView: View {
+    
+    @State var isCheck = false
+    
     var body: some View {
         VStack {
             HStack(spacing: 0) {
@@ -24,7 +27,7 @@ struct HomeContentView: View {
                 
                 Spacer()
             }
-            .frame(width: .infinity, height: 60, alignment: .center)
+            .frame(maxWidth: .infinity, maxHeight: 60, alignment: .center)
             .padding(.leading, 20)
             
             HStack {
@@ -49,14 +52,54 @@ struct HomeContentView: View {
                 })
                 .frame(width: 30, height: 30)
             }
-            .frame(width: .infinity, height: 60, alignment: .center)
+            .frame(maxWidth: .infinity, maxHeight: 60, alignment: .center)
             .padding(.leading, 20)
             .padding(.trailing, 20)
             
+            
             Spacer()
+            
+            HStack {
+                Text("2021년 10월 20일 \n메모없음")
+                    .frame(minWidth: 0,
+                           idealWidth: 300,
+                           maxWidth: .infinity,
+                           minHeight: 0,
+                           idealHeight: 66,
+                           maxHeight: 66,
+                           alignment: .leading)
+                    .padding(.leading, 11)
+                    .padding(.trailing, 8)
+                                                
+                Image("memoIcon")
+                    .frame(width: 56, height: 56)
+                    .padding(.trailing, 10)
+                
+            }.frame(maxWidth: .infinity, maxHeight: 66, alignment: .center)
+            
+            HStack {
+                Button {
+                    self.isCheck.toggle()
+                } label: {
+                    VStack(spacing: 0) {
+                        Image( self.isCheck ? "calendarIconOn" : "calendarIconOff")
+                            .padding(.bottom, 3)
+                        
+                        let color = self.isCheck ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
+                        
+                        Text("캘린더")
+                            .font(Font.system(size: 13, weight: .bold))
+                            .foregroundColor(color)
+                    }
+                }
+            }
+            .background(Image("bottomTabBarBackground"))
+            .edgesIgnoringSafeArea(.bottom)
+            .frame(maxWidth: .infinity, maxHeight: 112, alignment: .center)
         }
     }
 }
+
 
 struct HomeContentView_Previews: PreviewProvider {
     static var previews: some View {
