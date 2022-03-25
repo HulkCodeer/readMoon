@@ -18,6 +18,7 @@
 		11AE7DE527EC6F4E0033371F /* readMoonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DE427EC6F4E0033371F /* readMoonUITestsLaunchTests.swift */; };
 		11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF127EC702B0033371F /* HomeContentView.swift */; };
 		11AE7DF727EC70CA0033371F /* SplashContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF627EC70CA0033371F /* SplashContentView.swift */; };
+		11AE7DFA27EDF7C00033371F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF927EDF7C00033371F /* MainTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		11AE7DE427EC6F4E0033371F /* readMoonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readMoonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		11AE7DF127EC702B0033371F /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
 		11AE7DF627EC70CA0033371F /* SplashContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContentView.swift; sourceTree = "<group>"; };
+		11AE7DF927EDF7C00033371F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				11AE7DF127EC702B0033371F /* HomeContentView.swift */,
+				11AE7DF927EDF7C00033371F /* MainTabBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				11AE7DCC27EC6F4E0033371F /* Persistence.swift in Sources */,
 				11AE7DF727EC70CA0033371F /* SplashContentView.swift in Sources */,
+				11AE7DFA27EDF7C00033371F /* MainTabBar.swift in Sources */,
 				11AE7DC527EC6F4D0033371F /* ContentView.swift in Sources */,
 				11AE7DCF27EC6F4E0033371F /* readMoon.xcdatamodeld in Sources */,
 				11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */,

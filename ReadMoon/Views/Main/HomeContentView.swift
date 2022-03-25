@@ -77,56 +77,7 @@ struct HomeContentView: View {
                 
             }.frame(maxWidth: .infinity, maxHeight: 66, alignment: .center)
             
-            HStack(spacing: 18) {
-                Button {
-                    self.isCheck.toggle()
-                } label: {
-                    VStack(spacing: 0) {
-                        Image( self.isCheck ? "calendarIconOn" : "calendarIconOff")
-                            .padding(.bottom, 3)
-                        
-                        let color = self.isCheck ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
-                        
-                        Text("캘린더")
-                            .font(Font.system(size: 13, weight: .bold))
-                            .foregroundColor(color)
-                    }
-                }.frame(maxWidth: 100, maxHeight: 54)
-                
-                Button {
-                    self.isCheck.toggle()
-                } label: {
-                    VStack(spacing: 0) {
-                        Image( self.isCheck ? "statisticsIconOn" : "statisticsIconOff")
-                            .padding(.bottom, 3)
-                        
-                        let color = self.isCheck ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
-                        
-                        Text("통계")
-                            .font(Font.system(size: 13, weight: .bold))
-                            .foregroundColor(color)
-                    }
-                }.frame(maxWidth: 100, maxHeight: 54)
-                
-                Button {
-                    self.isCheck.toggle()
-                } label: {
-                    VStack(spacing: 0) {
-                        Image( self.isCheck ? "settingIconOn" : "settingIconOff")
-                            .padding(.bottom, 3)
-                        
-                        let color = self.isCheck ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
-                        
-                        Text("설정")
-                            .font(Font.system(size: 13, weight: .bold))
-                            .foregroundColor(color)
-                    }
-                }.frame(maxWidth: 100, maxHeight: 54)
-                
-                
-            }
-            .background(Image("bottomTabBarBackground"))
-            .frame(maxWidth: .infinity, maxHeight: 112, alignment: .center)
+            MainTabBar(isCheck: $isCheck)
         }
         .edgesIgnoringSafeArea(.bottom)
     }
