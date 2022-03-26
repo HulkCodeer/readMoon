@@ -9,10 +9,15 @@ import SwiftUI
 
 struct HomeContentView: View {
     
+    // MARK: STATE
     @State var isCheck = false
+    @State var calendarDayArray: [String] = []
+    
+    // MARK: VARIABLE
+    let colums = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HStack(spacing: 0) {
                 Image("calendarIcon")
                     .frame(width: 32, height: 32)
@@ -56,8 +61,18 @@ struct HomeContentView: View {
             .padding(.leading, 20)
             .padding(.trailing, 20)
             
-            
-            Spacer()
+            if self.calendarDayArray.count != 0 {
+                LazyVGrid(columns: self.colums) {
+                    ForEach(self.calendarDayArray, id: \.self) {data in
+                        Text("\(data.toDate(dateFormat: "yyyy-MM-dd")?.toString(dateFormat: "d") ?? "0000년 0월 0일")")
+                        .frame(minWidth: 48, minHeight: 60)
+                        .background(Color(red: 247 / 255, green: 247 / 255, blue: 247 / 255))
+                    }
+                }
+                .frame(maxWidth: .infinity, minHeight: 200)
+                .padding(.leading, 11)
+                .padding(.trailing, 10)
+            }
             
             HStack {
                 Text("2021년 10월 20일 \n메모없음")
@@ -68,18 +83,72 @@ struct HomeContentView: View {
                            idealHeight: 66,
                            maxHeight: 66,
                            alignment: .leading)
-                    .padding(.leading, 11)
+                    .padding(.leading, 16)
                     .padding(.trailing, 8)
+                    .background(Color(red: 247 / 255, green: 247 / 255, blue: 247 / 255))
                                                 
                 Image("memoIcon")
                     .frame(width: 56, height: 56)
                     .padding(.trailing, 10)
                 
-            }.frame(maxWidth: .infinity, maxHeight: 66, alignment: .center)
+            }
+            .frame(maxWidth: .infinity, maxHeight: 66, alignment: .center)
+            .padding(.leading, 11)
+            
+            Spacer()
             
             MainTabBar(isCheck: $isCheck)
         }
         .edgesIgnoringSafeArea(.bottom)
+        .onAppear(perform: fetch)
+    }
+    
+    func fetch() {
+        self.calendarDayArray.removeAll()
+        
+        let dateFormatter = DateFormatter()
+        let date = Date()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+
+        let calendar = Calendar.current
+        let startComponents = calendar.dateComponents([.year, .month], from: date)
+        let startOfMonth = calendar.date(from: startComponents)!
+
+        var endComponents = DateComponents()
+        endComponents.month = 1
+        endComponents.day = -1
+        
+        let endOfMonth = calendar.date(byAdding: endComponents, to: startOfMonth) ?? Date()
+        
+        let startOfWeekDay = calendar.component(.weekday, from: startOfMonth) - 1
+        var addingDate = startOfMonth
+
+        // 6주 기준 42일
+        for i in 0 ..< 42 {
+            if i < startOfWeekDay {
+                var minusComponents = DateComponents()
+                minusComponents.day = i - startOfWeekDay
+                if let _minusDate = calendar.date(byAdding: minusComponents, to: startOfMonth) {
+                    self.calendarDayArray.append(dateFormatter.string(from: _minusDate))
+                }
+            } else if i == startOfWeekDay {
+                self.calendarDayArray.append(dateFormatter.string(from: startOfMonth))
+            } else {
+                var addComponents = DateComponents()
+                addComponents.day = 1
+                if let _addingDate = calendar.date(byAdding: addComponents, to: addingDate) {
+                    addingDate = _addingDate
+                    let compareResult = calendar.compare(_addingDate, to: endOfMonth, toGranularity: .month)
+                    if compareResult == .orderedSame {
+                        self.calendarDayArray.append(dateFormatter.string(from: _addingDate))
+                    } else {
+                        break
+                    }
+                } else {
+                    break
+                }
+            }
+        }
     }
 }
 
