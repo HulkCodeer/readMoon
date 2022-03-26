@@ -13,7 +13,7 @@ struct readMoonApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
