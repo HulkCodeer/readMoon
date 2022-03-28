@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1106146527EF67AE008567B8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106146427EF67AE008567B8 /* String+Extension.swift */; };
 		1106146727EF67EB008567B8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106146627EF67EB008567B8 /* Date+Extension.swift */; };
+		11815B5C27F1366B00ED259A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11815B5B27F1366B00ED259A /* HomeViewModel.swift */; };
+		11815B5F27F137AE00ED259A /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11815B5E27F137AE00ED259A /* CommonViewModel.swift */; };
 		11AE7DC327EC6F4D0033371F /* readMoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DC227EC6F4D0033371F /* readMoonApp.swift */; };
 		11AE7DC527EC6F4D0033371F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DC427EC6F4D0033371F /* ContentView.swift */; };
 		11AE7DC727EC6F4E0033371F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AE7DC627EC6F4E0033371F /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		1106146427EF67AE008567B8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1106146627EF67EB008567B8 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		11815B5B27F1366B00ED259A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		11815B5E27F137AE00ED259A /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		11AE7DBF27EC6F4D0033371F /* readMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AE7DC227EC6F4D0033371F /* readMoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readMoonApp.swift; sourceTree = "<group>"; };
 		11AE7DC427EC6F4D0033371F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,11 +89,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1106146227EF60B5008567B8 /* New Group */ = {
+		1106146227EF60B5008567B8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				11815B5B27F1366B00ED259A /* HomeViewModel.swift */,
 			);
-			path = "New Group";
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1106146327EF679D008567B8 /* Extensions */ = {
@@ -99,6 +104,14 @@
 				1106146627EF67EB008567B8 /* Date+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11815B5D27F1379700ED259A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				11815B5E27F137AE00ED259A /* CommonViewModel.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 		11AE7DB627EC6F4D0033371F = {
@@ -124,6 +137,7 @@
 		11AE7DC127EC6F4D0033371F /* readMoon */ = {
 			isa = PBXGroup;
 			children = (
+				11815B5D27F1379700ED259A /* Commons */,
 				1106146327EF679D008567B8 /* Extensions */,
 				11AE7DF827EC71D60033371F /* Application */,
 				11AE7DF427EC70780033371F /* Views */,
@@ -164,7 +178,7 @@
 		11AE7DF327EC70730033371F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				1106146227EF60B5008567B8 /* New Group */,
+				1106146227EF60B5008567B8 /* ViewModel */,
 				11AE7DF127EC702B0033371F /* HomeContentView.swift */,
 				11AE7DF927EDF7C00033371F /* MainTabBar.swift */,
 			);
@@ -329,9 +343,11 @@
 				1106146527EF67AE008567B8 /* String+Extension.swift in Sources */,
 				11AE7DCC27EC6F4E0033371F /* Persistence.swift in Sources */,
 				11AE7DF727EC70CA0033371F /* SplashContentView.swift in Sources */,
+				11815B5C27F1366B00ED259A /* HomeViewModel.swift in Sources */,
 				11AE7DFA27EDF7C00033371F /* MainTabBar.swift in Sources */,
 				11AE7DC527EC6F4D0033371F /* ContentView.swift in Sources */,
 				11AE7DCF27EC6F4E0033371F /* readMoon.xcdatamodeld in Sources */,
+				11815B5F27F137AE00ED259A /* CommonViewModel.swift in Sources */,
 				11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */,
 				11AE7DC327EC6F4D0033371F /* readMoonApp.swift in Sources */,
 				1106146727EF67EB008567B8 /* Date+Extension.swift in Sources */,

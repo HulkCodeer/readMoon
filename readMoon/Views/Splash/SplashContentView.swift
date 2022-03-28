@@ -12,7 +12,8 @@ struct SplashContentView: View {
     
     var body: some View {        
         if isActive {
-            HomeContentView()
+            let viewModel = HomeViewModel()
+            HomeContentView(viewModel: viewModel)
         } else {
             Image("splashIcon")
                 .frame(width: 186, height: 237)

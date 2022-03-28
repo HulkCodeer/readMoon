@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct MainTabBar: View {
-    @Binding var isCheck: Bool
+    @Binding var selectedTabBarType: TabBarType
     
     var body: some View {
         HStack(spacing: 18) {
             Button {
-                self.isCheck.toggle()
+                self.selectedTabBarType = .calendar
             } label: {
                 VStack(spacing: 0) {
-                    Image( self.isCheck ? "calendarIconOn" : "calendarIconOff")
+                    Image( self.selectedTabBarType == .calendar ? "calendarIconOn" : "calendarIconOff")
                         .padding(.bottom, 3)
                     
-                    let color = self.isCheck ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
+                    let color = self.selectedTabBarType == .calendar ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
                     
                     Text("캘린더")
                         .font(Font.system(size: 13, weight: .bold))
@@ -28,13 +28,13 @@ struct MainTabBar: View {
             }.frame(maxWidth: 100, maxHeight: 54)
             
             Button {
-                self.isCheck.toggle()
+                self.selectedTabBarType = .statistics
             } label: {
                 VStack(spacing: 0) {
-                    Image( self.isCheck ? "statisticsIconOn" : "statisticsIconOff")
+                    Image( self.selectedTabBarType == .statistics ? "statisticsIconOn" : "statisticsIconOff")
                         .padding(.bottom, 3)
                     
-                    let color = self.isCheck ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
+                    let color = self.selectedTabBarType == .statistics ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
                     
                     Text("통계")
                         .font(Font.system(size: 13, weight: .bold))
@@ -43,13 +43,13 @@ struct MainTabBar: View {
             }.frame(maxWidth: 100, maxHeight: 54)
             
             Button {
-                self.isCheck.toggle()
+                self.selectedTabBarType = .setting
             } label: {
                 VStack(spacing: 0) {
-                    Image( self.isCheck ? "settingIconOn" : "settingIconOff")
+                    Image( self.selectedTabBarType == .setting ? "settingIconOn" : "settingIconOff")
                         .padding(.bottom, 3)
                     
-                    let color = self.isCheck ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
+                    let color = self.selectedTabBarType == .setting ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 199 / 255, green: 199 / 255, blue: 199 / 255)
                     
                     Text("설정")
                         .font(Font.system(size: 13, weight: .bold))
@@ -65,7 +65,7 @@ struct MainTabBar: View {
 #if DEBUG
 struct MainTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabBar(isCheck: .constant(false))
+        MainTabBar(selectedTabBarType: .constant(.calendar))
     }
 }
 #endif

@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeContentView: View {
     
     // MARK: STATE
-    @State var isCheck = false
+    @ObservedObject var viewModel: HomeViewModel
     @State var calendarDayArray: [String] = []
     
     // MARK: VARIABLE
@@ -97,7 +97,7 @@ struct HomeContentView: View {
             
             Spacer()
             
-            MainTabBar(isCheck: $isCheck)
+            MainTabBar(selectedTabBarType: $viewModel.tabBarType)
         }
         .edgesIgnoringSafeArea(.bottom)
         .onAppear(perform: fetch)
@@ -155,6 +155,6 @@ struct HomeContentView: View {
 
 struct HomeContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeContentView()
+        HomeContentView(viewModel: HomeViewModel())
     }
 }
