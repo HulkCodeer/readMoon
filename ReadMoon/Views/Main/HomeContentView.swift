@@ -9,10 +9,24 @@ import SwiftUI
 
 struct HomeContentView: View {
     
+    enum CalendarWeekTitleType: String, CaseIterable {
+        case sun = "SUN"
+        case mon = "MON"
+        case tue = "TUE"
+        case wed = "WED"
+        case thu = "THU"
+        case fri = "FRI"
+        case sat = "SAT"
+    }
+    
     // MARK: STATE
     @ObservedObject var viewModel: HomeViewModel
     @State var calendarDayArray: [String] = []
-    
+    @State var clickDay: String = ""
+    @State var today: String = Date().toString(dateFormat: "yyyy년 MM월")
+    @State var currentDate: Date = Date()
+    @State var calendarReload: Bool = false
+            
     // MARK: VARIABLE
     let colums = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
@@ -37,7 +51,8 @@ struct HomeContentView: View {
             
             HStack {
                 Button(action: {
-                    
+                    self.currentDate = Calendar.current.date(byAdding: .month, value: -1, to: self.currentDate)!
+                    self.calendarReload = true
                 }, label: {
                     Image("calendarLeftArrow")
                 })
@@ -45,13 +60,14 @@ struct HomeContentView: View {
                 
                 Spacer()
                 
-                Text("2021년 10월")
+                Text(self.currentDate.toString(dateFormat: "yyyy년 MM월"))
                     .font(Font.system(size: 20, weight: .bold))
                 
                 Spacer()
                 
                 Button(action: {
-                    
+                    self.currentDate = Calendar.current.date(byAdding: .month, value: 1, to: self.currentDate)!
+                    self.calendarReload = true
                 }, label: {
                     Image("calendarRightArrow")
                 })
@@ -61,21 +77,43 @@ struct HomeContentView: View {
             .padding(.leading, 20)
             .padding(.trailing, 20)
             
-            if self.calendarDayArray.count != 0 {
-                LazyVGrid(columns: self.colums) {
+            HStack(spacing: 0) {
+                ForEach(CalendarWeekTitleType.allCases, id: \.self) {
+                    Text("\($0.rawValue)")
+                        .font(Font.system(size: 14, weight: .regular))
+                        .frame(maxWidth: .infinity, minHeight: 32, alignment: .center)
+                }
+            }
+            .padding(.leading, 11)
+            .padding(.trailing, 10)
+                        
+            
+            LazyVGrid(columns: self.colums) {
+                if calendarReload {
                     ForEach(self.calendarDayArray, id: \.self) {data in
-                        Text("\(data.toDate(dateFormat: "yyyy-MM-dd")?.toString(dateFormat: "d") ?? "0000년 0월 0일")")
-                        .frame(minWidth: 48, minHeight: 60)
-                        .background(Color(red: 247 / 255, green: 247 / 255, blue: 247 / 255))
+                        let date = data.toDate(dateFormat: "yyyy-MM-dd") ?? Date()
+                        let isToday = self.compareToday(compareDate: date)
+                        
+                        Button(action: {
+                            self.clickDay = date.toString(dateFormat: "yyyy년 MM월 dd일")
+                        }, label: {
+                            Text("\(date.toString(dateFormat: "d"))")
+                                .frame(minWidth: 48, minHeight: 60)
+                                .background(Color(red: 247 / 255, green: 247 / 255, blue: 247 / 255))
+                                .foregroundColor(isToday ? Color(red: 24 / 255, green: 24 / 255, blue: 24 / 255) : Color(red: 108 / 255, green: 108 / 255, blue: 108 / 255))
+                        })
                     }
                 }
-                .frame(maxWidth: .infinity, minHeight: 200)
-                .padding(.leading, 11)
-                .padding(.trailing, 10)
             }
+            .frame(maxWidth: .infinity, minHeight: 200)
+            .padding(.leading, 11)
+            .padding(.trailing, 10)
+            .onAppear(perform: {
+                self.calendarReload = false
+            })
             
             HStack {
-                Text("2021년 10월 20일 \n메모없음")
+                Text("\(self.clickDay) \n메모없음")
                     .frame(minWidth: 0,
                            idealWidth: 300,
                            maxWidth: .infinity,
@@ -94,6 +132,7 @@ struct HomeContentView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: 66, alignment: .center)
             .padding(.leading, 11)
+            .padding(.top, 10)
             
             Spacer()
             
@@ -103,11 +142,15 @@ struct HomeContentView: View {
         .onAppear(perform: fetch)
     }
     
-    func fetch() {
+    private func compareToday(compareDate: Date) -> Bool {
+        return Date().toString(dateFormat: "yyyy-MM-dd") == compareDate.toString(dateFormat: "yyyy-MM-dd")
+    }
+    
+    private func fetch() {
         self.calendarDayArray.removeAll()
         
         let dateFormatter = DateFormatter()
-        let date = Date()
+        let date = self.currentDate
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
         let calendar = Calendar.current
@@ -149,6 +192,8 @@ struct HomeContentView: View {
                 }
             }
         }
+        
+        self.calendarReload = true
     }
 }
 
