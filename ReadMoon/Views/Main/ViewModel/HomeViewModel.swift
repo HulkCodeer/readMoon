@@ -15,4 +15,5 @@ enum TabBarType {
 
 internal class HomeViewModel: CommonViewModel {
     @Published var tabBarType: TabBarType = .calendar
+    @Published var menstrualCycleModel: MenstrualCycleModel = MenstrualCycleModel()
 }

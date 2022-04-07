@@ -12,7 +12,7 @@ struct MainTabBar: View {
     
     var body: some View {
         HStack(spacing: 18) {
-            Button {
+            Button {                
                 self.selectedTabBarType = .calendar
             } label: {
                 VStack(spacing: 0) {

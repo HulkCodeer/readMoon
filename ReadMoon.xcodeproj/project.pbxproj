@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1106146527EF67AE008567B8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106146427EF67AE008567B8 /* String+Extension.swift */; };
 		1106146727EF67EB008567B8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106146627EF67EB008567B8 /* Date+Extension.swift */; };
+		1108C9CE27FD2FD600334805 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108C9CD27FD2FD600334805 /* Popup.swift */; };
+		1108C9D227FD357100334805 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108C9D127FD357100334805 /* View+Extension.swift */; };
+		110DA4FA27F546EB00751813 /* MenstrualCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DA4F927F546EB00751813 /* MenstrualCycleModel.swift */; };
+		110DA50527F54CEF00751813 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 110DA50427F54CEF00751813 /* Realm */; };
+		110DA50727F54CEF00751813 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 110DA50627F54CEF00751813 /* RealmSwift */; };
+		112F901A27F2F99500377C7F /* PrintLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F901927F2F99500377C7F /* PrintLog.swift */; };
 		11815B5C27F1366B00ED259A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11815B5B27F1366B00ED259A /* HomeViewModel.swift */; };
 		11815B5F27F137AE00ED259A /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11815B5E27F137AE00ED259A /* CommonViewModel.swift */; };
 		11AE7DC327EC6F4D0033371F /* readMoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DC227EC6F4D0033371F /* readMoonApp.swift */; };
@@ -45,6 +51,10 @@
 /* Begin PBXFileReference section */
 		1106146427EF67AE008567B8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1106146627EF67EB008567B8 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1108C9CD27FD2FD600334805 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		1108C9D127FD357100334805 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+Extension.swift"; path = "../../../../../.Trash/View+Extension.swift"; sourceTree = "<group>"; };
+		110DA4F927F546EB00751813 /* MenstrualCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstrualCycleModel.swift; sourceTree = "<group>"; };
+		112F901927F2F99500377C7F /* PrintLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
 		11815B5B27F1366B00ED259A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		11815B5E27F137AE00ED259A /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		11AE7DBF27EC6F4D0033371F /* readMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110DA50727F54CEF00751813 /* RealmSwift in Frameworks */,
+				110DA50527F54CEF00751813 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,10 +118,35 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		110DA4F827F546BE00751813 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				110DA4F927F546EB00751813 /* MenstrualCycleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		110DA4FB27F54A9900751813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		112F901827F2F97F00377C7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				112F901927F2F99500377C7F /* PrintLog.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		11815B5D27F1379700ED259A /* Commons */ = {
 			isa = PBXGroup;
 			children = (
 				11815B5E27F137AE00ED259A /* CommonViewModel.swift */,
+				1108C9D127FD357100334805 /* View+Extension.swift */,
+				1108C9CD27FD2FD600334805 /* Popup.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -121,6 +158,7 @@
 				11AE7DD727EC6F4E0033371F /* readMoonTests */,
 				11AE7DE127EC6F4E0033371F /* readMoonUITests */,
 				11AE7DC027EC6F4D0033371F /* Products */,
+				110DA4FB27F54A9900751813 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +175,7 @@
 		11AE7DC127EC6F4D0033371F /* readMoon */ = {
 			isa = PBXGroup;
 			children = (
+				112F901827F2F97F00377C7F /* Utils */,
 				11815B5D27F1379700ED259A /* Commons */,
 				1106146327EF679D008567B8 /* Extensions */,
 				11AE7DF827EC71D60033371F /* Application */,
@@ -188,6 +227,7 @@
 		11AE7DF427EC70780033371F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				110DA4F827F546BE00751813 /* Models */,
 				11AE7DF527EC70800033371F /* Splash */,
 				11AE7DF327EC70730033371F /* Main */,
 			);
@@ -226,6 +266,10 @@
 			dependencies = (
 			);
 			name = readMoon;
+			packageProductDependencies = (
+				110DA50427F54CEF00751813 /* Realm */,
+				110DA50627F54CEF00751813 /* RealmSwift */,
+			);
 			productName = readMoon;
 			productReference = 11AE7DBF27EC6F4D0033371F /* readMoon.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +342,9 @@
 				Base,
 			);
 			mainGroup = 11AE7DB627EC6F4D0033371F;
+			packageReferences = (
+				110DA50327F54CEF00751813 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 11AE7DC027EC6F4D0033371F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,14 +389,18 @@
 			files = (
 				1106146527EF67AE008567B8 /* String+Extension.swift in Sources */,
 				11AE7DCC27EC6F4E0033371F /* Persistence.swift in Sources */,
+				110DA4FA27F546EB00751813 /* MenstrualCycleModel.swift in Sources */,
 				11AE7DF727EC70CA0033371F /* SplashContentView.swift in Sources */,
 				11815B5C27F1366B00ED259A /* HomeViewModel.swift in Sources */,
+				112F901A27F2F99500377C7F /* PrintLog.swift in Sources */,
 				11AE7DFA27EDF7C00033371F /* MainTabBar.swift in Sources */,
+				1108C9D227FD357100334805 /* View+Extension.swift in Sources */,
 				11AE7DC527EC6F4D0033371F /* ContentView.swift in Sources */,
 				11AE7DCF27EC6F4E0033371F /* readMoon.xcdatamodeld in Sources */,
 				11815B5F27F137AE00ED259A /* CommonViewModel.swift in Sources */,
 				11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */,
 				11AE7DC327EC6F4D0033371F /* readMoonApp.swift in Sources */,
+				1108C9CE27FD2FD600334805 /* Popup.swift in Sources */,
 				1106146727EF67EB008567B8 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,6 +750,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		110DA50327F54CEF00751813 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		110DA50427F54CEF00751813 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 110DA50327F54CEF00751813 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		110DA50627F54CEF00751813 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 110DA50327F54CEF00751813 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		11AE7DCD27EC6F4E0033371F /* readMoon.xcdatamodeld */ = {
