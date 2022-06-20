@@ -118,19 +118,16 @@ struct HomeContentView: View {
                     .padding(.leading, 16)
                     .padding(.trailing, 8)
                     .background(Color(red: 247 / 255, green: 247 / 255, blue: 247 / 255))
-                    .onTapGesture {
-                        printLog(out: "PARK TEST")
-                        self.isShowPopup = true
-                    }
-                                                                    
-                Image("memoIcon")
+                                
+                ZStack {
+                    Button(action: {
+                        isShowPopup = true
+                    }, label: {
+                        Image("memoIcon")
+                    })
                     .frame(width: 56, height: 56)
-                    .padding(.trailing, 10) 
-                Button(action: {
-                      
-                }, label: {
-                    
-                })
+                    .padding(.trailing, 10)
+                }
                 
             }
             .frame(maxWidth: .infinity, maxHeight: 66, alignment: .center)
@@ -144,9 +141,9 @@ struct HomeContentView: View {
         }
         .edgesIgnoringSafeArea(.bottom)
         .onAppear(perform: fetch)
-        .popup(isPresented: $isShowPopup, view: {
-            Text("POPUP")
-        })
+        .popupNavigationView(show: $isShowPopup) {
+            Text("sldkjflaksdfl")
+        }
     }
     
     
@@ -184,5 +181,36 @@ struct HomeContentView: View {
 struct HomeContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeContentView(viewModel: HomeViewModel())
+    }
+}
+
+extension View {
+    func popupNavigationView<Content: View>(show: Binding<Bool>,
+                                  @ViewBuilder content: @escaping () -> Content) -> some View {
+        return self
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .overlay {
+                
+                if show.wrappedValue{
+                    
+                    // MARK: Geometry Reader for reading Container Frame
+                    GeometryReader{ proxy in
+                        
+                        Color.green
+                            .opacity(0.15)
+                            .ignoresSafeArea()
+                        
+                        let size = proxy.size
+                        
+                        NavigationView{
+                            
+                            content()
+                        }
+                        .frame(width: size.width, height: size.height / 1.7, alignment: .center)
+                        .cornerRadius(15)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    }
+                }
+            }
     }
 }

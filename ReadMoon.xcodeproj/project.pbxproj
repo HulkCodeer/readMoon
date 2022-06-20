@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1106146527EF67AE008567B8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106146427EF67AE008567B8 /* String+Extension.swift */; };
 		1106146727EF67EB008567B8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106146627EF67EB008567B8 /* Date+Extension.swift */; };
-		1108C9CE27FD2FD600334805 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108C9CD27FD2FD600334805 /* Popup.swift */; };
-		1108C9D227FD357100334805 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108C9D127FD357100334805 /* View+Extension.swift */; };
 		110DA4FA27F546EB00751813 /* MenstrualCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DA4F927F546EB00751813 /* MenstrualCycleModel.swift */; };
 		110DA50527F54CEF00751813 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 110DA50427F54CEF00751813 /* Realm */; };
 		110DA50727F54CEF00751813 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 110DA50627F54CEF00751813 /* RealmSwift */; };
@@ -29,6 +27,8 @@
 		11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF127EC702B0033371F /* HomeContentView.swift */; };
 		11AE7DF727EC70CA0033371F /* SplashContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF627EC70CA0033371F /* SplashContentView.swift */; };
 		11AE7DFA27EDF7C00033371F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE7DF927EDF7C00033371F /* MainTabBar.swift */; };
+		11B0B420280EC3A100F54E47 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0B41F280EC3A100F54E47 /* BottomSheetView.swift */; };
+		11B0B428280ED11900F54E47 /* OverlayModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0B427280ED11900F54E47 /* OverlayModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,6 @@
 /* Begin PBXFileReference section */
 		1106146427EF67AE008567B8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1106146627EF67EB008567B8 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		1108C9CD27FD2FD600334805 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
-		1108C9D127FD357100334805 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+Extension.swift"; path = "../../../../../.Trash/View+Extension.swift"; sourceTree = "<group>"; };
 		110DA4F927F546EB00751813 /* MenstrualCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstrualCycleModel.swift; sourceTree = "<group>"; };
 		112F901927F2F99500377C7F /* PrintLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
 		11815B5B27F1366B00ED259A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -72,6 +70,8 @@
 		11AE7DF127EC702B0033371F /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
 		11AE7DF627EC70CA0033371F /* SplashContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContentView.swift; sourceTree = "<group>"; };
 		11AE7DF927EDF7C00033371F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		11B0B41F280EC3A100F54E47 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		11B0B427280ED11900F54E47 /* OverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				11815B5E27F137AE00ED259A /* CommonViewModel.swift */,
-				1108C9D127FD357100334805 /* View+Extension.swift */,
-				1108C9CD27FD2FD600334805 /* Popup.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -220,6 +218,8 @@
 				1106146227EF60B5008567B8 /* ViewModel */,
 				11AE7DF127EC702B0033371F /* HomeContentView.swift */,
 				11AE7DF927EDF7C00033371F /* MainTabBar.swift */,
+				11B0B41F280EC3A100F54E47 /* BottomSheetView.swift */,
+				11B0B427280ED11900F54E47 /* OverlayModifier.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -394,13 +394,13 @@
 				11815B5C27F1366B00ED259A /* HomeViewModel.swift in Sources */,
 				112F901A27F2F99500377C7F /* PrintLog.swift in Sources */,
 				11AE7DFA27EDF7C00033371F /* MainTabBar.swift in Sources */,
-				1108C9D227FD357100334805 /* View+Extension.swift in Sources */,
 				11AE7DC527EC6F4D0033371F /* ContentView.swift in Sources */,
 				11AE7DCF27EC6F4E0033371F /* readMoon.xcdatamodeld in Sources */,
+				11B0B428280ED11900F54E47 /* OverlayModifier.swift in Sources */,
 				11815B5F27F137AE00ED259A /* CommonViewModel.swift in Sources */,
 				11AE7DF227EC702B0033371F /* HomeContentView.swift in Sources */,
+				11B0B420280EC3A100F54E47 /* BottomSheetView.swift in Sources */,
 				11AE7DC327EC6F4D0033371F /* readMoonApp.swift in Sources */,
-				1108C9CE27FD2FD600334805 /* Popup.swift in Sources */,
 				1106146727EF67EB008567B8 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,7 +580,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -610,7 +610,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
